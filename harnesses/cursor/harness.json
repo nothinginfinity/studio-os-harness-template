@@ -1,0 +1,29 @@
+{
+  "$schema": "harness@1",
+  "id": "cursor",
+  "name": "Cursor Agent Dev Assistant",
+  "version": "1.0.0",
+  "type": "dev-assistant",
+  "model_target": "gpt-4o",
+  "description": "Harness seeded from Cursor Agent's known prompt architecture. Optimized for precise file editing, codebase search, and terminal tool use inside a code editor context.",
+  "tags": ["coding", "agentic", "cursor", "gpt-4o", "dev-assistant"],
+  "system_prompt": "harnesses/cursor/system-prompt.md",
+  "prompts": [],
+  "tools": [
+    "tools/example-tool.json"
+  ],
+  "skills": [],
+  "webhooks": [],
+  "automations": [],
+  "context_assembly": [
+    "base_identity",
+    "tool_manifest",
+    "codebase_context",
+    "open_files",
+    "conversation_history"
+  ],
+  "notes": "Cursor always injects open editor tabs as context. Prioritize those files over broad codebase search.",
+  "source_attribution": "Adapted from public research at patmcguinness.substack.com/p/cursor-system-prompt-revealed and gist by sshh12 (March 2025)",
+  "created_at": "2026-04-20",
+  "updated_at": "2026-04-20"
+}

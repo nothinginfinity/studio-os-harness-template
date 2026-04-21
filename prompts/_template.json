@@ -1,0 +1,23 @@
+{
+  "$schema": "harness-prompt@1",
+  "id": "your-prompt-id",
+  "name": "Human-readable prompt name",
+  "version": "1.0.0",
+  "type": "system",
+  "model_target": "any",
+  "tags": [],
+  "description": "What this prompt does and when to use it.",
+  "variables": [
+    {
+      "name": "VARIABLE_NAME",
+      "description": "What this variable injects into the prompt",
+      "required": true,
+      "default": null
+    }
+  ],
+  "content_file": "prompts/your-prompt-id.md",
+  "created_at": "YYYY-MM-DD",
+  "updated_at": "YYYY-MM-DD",
+  "author": "",
+  "notes": ""
+}

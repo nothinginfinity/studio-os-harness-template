@@ -1,0 +1,23 @@
+{
+  "$schema": "harness-prompt@1",
+  "id": "example-prompt",
+  "name": "Example Assistant Prompt",
+  "version": "1.0.0",
+  "type": "system",
+  "model_target": "any",
+  "tags": ["example", "template"],
+  "description": "A placeholder prompt showing the full schema. Replace with your real prompt.",
+  "variables": [
+    {
+      "name": "CONTEXT",
+      "description": "The domain context injected at runtime",
+      "required": false,
+      "default": "general"
+    }
+  ],
+  "content_file": "prompts/example-prompt.md",
+  "created_at": "2026-04-20",
+  "updated_at": "2026-04-20",
+  "author": "",
+  "notes": "Fork this file and replace content_file with your prompt markdown."
+}

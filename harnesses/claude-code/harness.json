@@ -1,0 +1,30 @@
+{
+  "$schema": "harness@1",
+  "id": "claude-code",
+  "name": "Claude Code Dev Assistant",
+  "version": "1.0.0",
+  "type": "dev-assistant",
+  "model_target": "claude-3-5-sonnet",
+  "description": "Harness seeded from Claude Code's known prompt architecture. Optimized for agentic coding tasks: reading, editing, and committing code with tool use.",
+  "tags": ["coding", "agentic", "claude", "dev-assistant"],
+  "system_prompt": "harnesses/claude-code/system-prompt.md",
+  "prompts": [],
+  "tools": [
+    "tools/example-tool.json"
+  ],
+  "skills": [],
+  "webhooks": [],
+  "automations": [],
+  "context_assembly": [
+    "base_identity",
+    "environment",
+    "tool_manifest",
+    "task_context",
+    "user_instructions",
+    "conversation_history"
+  ],
+  "notes": "Always check for CLAUDE.md in repo root and prepend its contents to user_instructions block.",
+  "source_attribution": "Adapted from public analysis at dbreunig.com/2026/04/04/how-claude-code-builds-a-system-prompt.html",
+  "created_at": "2026-04-20",
+  "updated_at": "2026-04-20"
+}

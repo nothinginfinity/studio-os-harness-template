@@ -1,0 +1,32 @@
+{
+  "$schema": "harness-tool@1",
+  "id": "example-tool",
+  "name": "read_file",
+  "version": "1.0.0",
+  "description": "Read the contents of a file at a given path. Use this when the user asks about an existing file or when you need to inspect code before editing. Do NOT use this tool to list directories — use list_files instead.",
+  "tags": ["filesystem", "read"],
+  "input_schema": {
+    "type": "object",
+    "properties": {
+      "path": {
+        "type": "string",
+        "description": "Absolute or relative path to the file to read"
+      }
+    },
+    "required": ["path"]
+  },
+  "output_schema": {
+    "type": "object",
+    "properties": {
+      "content": { "type": "string", "description": "Full file content" },
+      "lines": { "type": "number", "description": "Line count" }
+    }
+  },
+  "example_call": { "path": "src/index.ts" },
+  "example_response": { "content": "import React from 'react'...\n", "lines": 42 },
+  "webhook": null,
+  "created_at": "2026-04-20",
+  "updated_at": "2026-04-20",
+  "author": "",
+  "notes": ""
+}

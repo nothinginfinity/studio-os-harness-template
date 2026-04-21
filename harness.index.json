@@ -1,0 +1,38 @@
+{
+  "version": "harness@1",
+  "name": "studio-os-harness-template",
+  "type": "custom",
+  "updated_at": "2026-04-20",
+  "prompts": [
+    {
+      "id": "example-prompt",
+      "file": "prompts/example-prompt.json",
+      "name": "Example Prompt",
+      "tags": ["example"],
+      "model_target": "any",
+      "version": "1.0.0"
+    }
+  ],
+  "tools": [
+    {
+      "id": "example-tool",
+      "file": "tools/example-tool.json",
+      "name": "Example Tool",
+      "tags": ["example"]
+    }
+  ],
+  "skills": [
+    {
+      "id": "example-skill",
+      "file": "skills/example-skill.md",
+      "name": "Example Skill",
+      "tags": ["example"]
+    }
+  ],
+  "webhooks": [],
+  "automations": [],
+  "harnesses": [
+    { "id": "claude-code", "path": "harnesses/claude-code/harness.json" },
+    { "id": "cursor", "path": "harnesses/cursor/harness.json" }
+  ]
+}

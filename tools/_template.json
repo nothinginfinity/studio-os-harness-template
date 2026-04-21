@@ -1,0 +1,35 @@
+{
+  "$schema": "harness-tool@1",
+  "id": "your-tool-id",
+  "name": "tool_function_name",
+  "version": "1.0.0",
+  "description": "What this tool does. Written for the model — be explicit about when to use it and when NOT to.",
+  "tags": [],
+  "input_schema": {
+    "type": "object",
+    "properties": {
+      "param_name": {
+        "type": "string",
+        "description": "What this parameter does"
+      }
+    },
+    "required": ["param_name"]
+  },
+  "output_schema": {
+    "type": "object",
+    "properties": {
+      "result": { "type": "string" }
+    }
+  },
+  "example_call": {
+    "param_name": "example value"
+  },
+  "example_response": {
+    "result": "example output"
+  },
+  "webhook": null,
+  "created_at": "YYYY-MM-DD",
+  "updated_at": "YYYY-MM-DD",
+  "author": "",
+  "notes": ""
+}
